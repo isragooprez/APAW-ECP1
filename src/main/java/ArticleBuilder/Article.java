@@ -6,6 +6,7 @@ public class Article {
 	private String reference;
 	private long stock;
 	private boolean discontinued;
+	private Provider provider;
 
 	public Article() {
 		
@@ -46,5 +47,21 @@ public class Article {
 	public void setDiscontinued(boolean discontinued) {
 		this.discontinued = discontinued;
 	}
+
+	public Provider getProvider() {
+		return provider;
+	}
+
+	public void setProvider(Provider provider) {
+		this.provider = provider;
+	}
+
+	@Override
+	public String toString() {
+		return "Article [id=" + id + ", reference=" + reference + ", stock=" + stock + ", discontinued=" + discontinued
+				+ ", provider=" + provider + "]";
+	}
+	
+	
 
 }

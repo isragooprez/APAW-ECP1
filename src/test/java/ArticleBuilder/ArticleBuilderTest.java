@@ -8,7 +8,9 @@ public class ArticleBuilderTest {
 
 	@Test
 	public void ArticleBuildeTest() {
-		Article article= new ArticleBuilder().id(3).reference("Article").stock(100).discontinued(true).build();
+		
+		Provider provider= new ProviderBuilder().id(6).company("UPM").adress("Vallecas").Build();
+		Article article= new ArticleBuilder().id(3).reference("Article").stock(100).discontinued(true).provider(provider).build();
 		assertEquals(3, article.getId());
 	}
 
