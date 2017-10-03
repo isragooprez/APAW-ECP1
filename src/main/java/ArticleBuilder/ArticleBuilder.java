@@ -3,16 +3,18 @@ package ArticleBuilder;
 public class ArticleBuilder {
 
 	private Article article;
-	
+
 	private int id;
 
 	public ArticleBuilder(int id) {
-		this.id=id;
-		article=new Article(id);
+		this.id = id;
+		article = new Article(id);
 	}
+
 	public ArticleBuilder() {
 		this(0);
 	}
+
 	public ArticleBuilder id(int id) {
 		article.setId(id);
 		return this;
@@ -33,18 +35,21 @@ public class ArticleBuilder {
 		return this;
 	}
 
+	public ArticleBuilder provider(Provider provider) {
+		article.setProvider(provider);
+		return this;
+	}
+
 	public Article build() {
 		return this.article;
 	}
+
 	public int getId() {
 		return id;
 	}
+
 	public void setId(int id) {
 		this.id = id;
 	}
 
-	
-	
-	
-	
 }
