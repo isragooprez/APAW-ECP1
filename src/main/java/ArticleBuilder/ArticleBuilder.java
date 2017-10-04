@@ -40,7 +40,7 @@ public class ArticleBuilder {
 		return this;
 	}
 
-	public Article build() {
+	public Article Build() {
 		return this.article;
 	}
 
