@@ -17,15 +17,17 @@ public class ProviderBuilder {
 		this(0, "");
 		provider = new Provider();
 	}
+
 	public ProviderBuilder id(int id) {
 		provider.setId(id);
-	return this;
-		
+		return this;
 	}
+
 	public ProviderBuilder company(String company) {
 		provider.setCompany(company);
 		return this;
 	}
+
 	public ProviderBuilder adress(String adress) {
 		provider.setAdress(adress);
 		return this;
