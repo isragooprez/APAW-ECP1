@@ -10,7 +10,7 @@ public class ArticleBuilderTest {
 	public void ArticleBuildeTest() {
 		
 		Provider provider= new ProviderBuilder().id(6).company("UPM").adress("Vallecas").Build();
-		Article article= new ArticleBuilder().id(3).reference("Article").stock(100).discontinued(true).provider(provider).build();
+		Article article= new ArticleBuilder().id(3).reference("Article").stock(100).discontinued(true).provider(provider).Build();
 		assertEquals(3, article.getId());
 	}
 
