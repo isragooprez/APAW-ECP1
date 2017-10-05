@@ -25,8 +25,8 @@ public class ArticleFactory {
 		return articleFactory;
 	}
 
-	public void AddArticle(int key, Article article) {
-		references.put(key, article);
+	public void AddArticle(Article article) {
+		references.put(article.getId(),article);
 	}
 
 	public void RemoveArticle(int key) {
