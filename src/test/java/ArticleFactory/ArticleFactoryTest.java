@@ -1,7 +1,11 @@
-package ArticleBuilder;
+package ArticleFactory;
 
 import org.junit.Test;
 
+import ArticleBuilder.Article;
+import ArticleBuilder.ArticleBuilder;
+import ArticleBuilder.Provider;
+import ArticleBuilder.ProviderBuilder;
 import ArticleFactory.ArticleFactory;
 
 public class ArticleFactoryTest {

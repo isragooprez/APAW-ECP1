@@ -1,4 +1,4 @@
-package ArticleBuilder;
+package ArticleComposite;
 
 import static org.junit.Assert.assertEquals;
 
@@ -7,6 +7,10 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
 
+import ArticleBuilder.Article;
+import ArticleBuilder.ArticleBuilder;
+import ArticleBuilder.Provider;
+import ArticleBuilder.ProviderBuilder;
 import ArticleComposite.ArticleComponent;
 import ArticleComposite.ArticleComposite;
 import ArticleComposite.ArticleLeaf;
