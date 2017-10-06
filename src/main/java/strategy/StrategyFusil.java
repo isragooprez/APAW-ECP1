@@ -10,17 +10,15 @@ public class StrategyFusil implements IStrategy {
 	@Override
 	public String Atacar(int estado) {
 		if (estado == 1) {
-
-			return "Soldado Atacando";
+			return "Soldado  Novato Atacando ";
 		} else {
-			return "Soldado Escondido";
+			return "Soldado  Novato Escondido";
 		}
-
 	}
 
 	@Override
 	public String Recargar(int municion) {
-		return "Regargando: "+ municion +" balas";
+		return "Regargando: " + municion + " balas";
 	}
 
 }
