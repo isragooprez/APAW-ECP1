@@ -1,5 +1,7 @@
 package strategy;
 
+import resources.PistolaInvalidaOptionExeption;
+
 public class StrategyPistola implements IStrategy {
 	@Override
 	public String ObtenerDescripcionStrategia() {
@@ -8,16 +10,21 @@ public class StrategyPistola implements IStrategy {
 
 	@Override
 	public String Atacar(int estado) {
-		if (estado == 1) {
-			return "Soldado Amateur Atacando";
+		String result = null;
+		if (estado != 1) {
+			try {
+				throw new PistolaInvalidaOptionExeption();
+			} catch (PistolaInvalidaOptionExeption e) {
+				e.printStackTrace();
+			}
 		} else {
-			return "Soldado Amateur Escondido";
+			result = "Soldado Amateur Atacando";
 		}
-
+		return result;
 	}
 
 	@Override
 	public String Recargar(int municion) {
-		return "Regargando: " + municion  + " balas";
+		return "Regargando: " + municion + " balas";
 	}
 }
