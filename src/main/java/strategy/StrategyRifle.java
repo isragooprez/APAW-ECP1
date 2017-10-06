@@ -1,6 +1,6 @@
 package strategy;
 
-public class StrategyRifle  implements IStrategy{
+public class StrategyRifle implements IStrategy {
 
 	@Override
 	public String ObtenerDescripcionStrategia() {
@@ -10,16 +10,14 @@ public class StrategyRifle  implements IStrategy{
 	@Override
 	public String Atacar(int estado) {
 		if (estado == 1) {
-
-			return "Soldado Atacando";
+			return "Soldado Amateur Atacando";
 		} else {
-			return "Soldado Escondido";
+			return "Soldado Amateur Escondido";
 		}
-
 	}
 
 	@Override
 	public String Recargar(int municion) {
-		return "Regargando: "+ municion +" balas";
+		return "Regargando: " + municion + " balas";
 	}
 }
