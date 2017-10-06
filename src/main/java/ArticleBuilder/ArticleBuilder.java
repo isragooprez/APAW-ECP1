@@ -4,10 +4,8 @@ public class ArticleBuilder {
 
 	private Article article;
 
-	private int id;
 
 	public ArticleBuilder(int id) {
-		this.id = id;
 		article = new Article(id);
 	}
 
@@ -44,12 +42,6 @@ public class ArticleBuilder {
 		return this.article;
 	}
 
-	public int getId() {
-		return id;
-	}
-
-	public void setId(int id) {
-		this.id = id;
-	}
+	
 
 }
