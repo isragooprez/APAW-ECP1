@@ -9,11 +9,19 @@ public class StrategyRifle implements IStrategy {
 
 	@Override
 	public String Atacar(int estado) {
-		if (estado == 1) {
-			return "Soldado Amateur Atacando";
-		} else {
-			return "Soldado Amateur Escondido";
+		String resul="Opcion no valida";
+		switch (estado) {
+		case 1:
+			resul = "Soldado Amateur Atacando";
+			break;
+		case 2:
+			resul = "Soldado Amateur Escondido";
+			break;
+
+		default:
+			break;
 		}
+		return resul;
 	}
 
 	@Override
