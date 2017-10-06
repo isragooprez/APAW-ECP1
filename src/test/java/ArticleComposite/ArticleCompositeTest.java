@@ -68,10 +68,10 @@ public class ArticleCompositeTest {
 
 	}
 
-	@Test
-	public void AddLeaf() {
-
-		exception.expect(UnsupportedOperationException.class);
-		articleLeaf.add(new ArticleLeaf(article1));
-	}
+//	@Test
+//	public void AddLeaf() {
+//
+////		exception.expect(UnsupportedOperationException.class);
+////		articleLeaf.add(new ArticleLeaf(article1));
+//	}
 }
