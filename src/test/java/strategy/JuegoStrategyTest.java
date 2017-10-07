@@ -27,7 +27,7 @@ public class JuegoStrategyTest {
 	@Test
 	public void playerAmateur() {
 		this.soldado.playerAmateur();
-		this.soldado.Informacion(1, 20);
+		this.soldado.Informacion(5, 20);
 		
 	}
 
