@@ -3,7 +3,6 @@ package strategy;
 import org.junit.Before;
 import org.junit.Test;
 
-import resources.PistolaInvalidaOptionExeption;
 
 public class JuegoStrategyTest {
 	private Soldado soldado;
@@ -26,7 +25,7 @@ public class JuegoStrategyTest {
 		this.soldado.Informacion(1, 50);
 	}
 
-	@Test(expected = PistolaInvalidaOptionExeption.class)
+	@Test
 	public void playerAmateurEstadoNovalido() {
 		this.soldado.playerAmateur();
 		this.soldado.Informacion(5, 20);
