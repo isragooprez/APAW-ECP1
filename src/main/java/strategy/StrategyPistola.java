@@ -17,8 +17,9 @@ public class StrategyPistola implements IStrategy {
 			} catch (PistolaInvalidaOptionExeption e) {
 				e.printStackTrace();
 			}
+			
 		} else {
-			result = "Soldado Amateur Atacando";
+			result = " Soldado Amateur Atacando";
 		}
 		return result;
 	}
