@@ -6,7 +6,6 @@ import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
-
 import ArticleBuilder.Article;
 import ArticleBuilder.ArticleBuilder;
 import ArticleBuilder.Provider;
@@ -68,10 +67,10 @@ public class ArticleCompositeTest {
 
 	}
 
-//	@Test
-//	public void AddLeaf() {
-//
-////		exception.expect(UnsupportedOperationException.class);
-////		articleLeaf.add(new ArticleLeaf(article1));
-//	}
+	@Test
+	public void AddLeaf(){
+		exception.expect(UnsupportedOperationException.class);
+		this.articleLeaf.add(new ArticleLeaf(article3));
+
+	}
 }
