@@ -8,7 +8,7 @@ public class ArticleComposite extends ArticleComponent {
 	private String name;
 
 	public ArticleComposite(String name) {
-		this.name = name;
+		setName(name);
 		listaArticleComponente = new ArrayList<>();
 	}
 
