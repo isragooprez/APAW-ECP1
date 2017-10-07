@@ -9,9 +9,6 @@ public class ArticleLeaf extends ArticleComponent {
 		this.article = article;
 	}
 
-	public ArticleLeaf() {
-		this(null);
-	}
 
 	public Article getArticle() {
 		return article;
@@ -33,9 +30,7 @@ public class ArticleLeaf extends ArticleComponent {
 
 	@Override
 	public void add(ArticleComponent articleComponent) {
-
 		throw new UnsupportedOperationException("Operación no soportada");
-
 	}
 
 }
