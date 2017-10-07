@@ -10,16 +10,20 @@ public class StrategyPistola implements IStrategy {
 
 	@Override
 	public String Atacar(int estado) {
-		String result = null;
-		if (estado != 1) {
+
+		String result = "";
+		if (estado == 1) {
+			result = "Soldado Amateur Atacando";
+		} else {
+
 			try {
 				throw new PistolaInvalidaOptionExeption();
 			} catch (PistolaInvalidaOptionExeption e) {
+				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-		} else {
-			result = "Soldado Amateur Atacando";
 		}
+
 		return result;
 	}
 
