@@ -32,11 +32,13 @@ Definir una familia de algoritmos, encapsular cada uno y hacerlos intercambiable
   2.	Distintos algoritmos serán apropiados en distintos momentos
   3.	Es difícil añadir nuevos algoritmos y modificar los existentes
   4.	No hay reutilización
-####### 1.4.1	 Solución:
- Definir clases que encapsulen los distintos algoritmos.
+  
+###### 1.5 Solución
+
+Definir clases que encapsulen los distintos algoritmos.
 Muchas veces tenemos un método con varias versiones. Por ejemplo un método para encriptar una cadena de texto. Existen muchos algoritmos para encriptar una cadena de texto y en función de ciertos aspectos debemos utilizar uno u otro. Si no utilizáramos ningún patrón esto se traduciría en un montón de ifs o en un switch en nuestro método. Para solucionar eso, lo que hacemos es definir clases para encapsular en cada una versión del algoritmo de tal forma que el cliente llamaría a una de esas clases y permanecería ajeno a si el método varía o no.
 
-###### 1.5	Aplicabilidad
+###### 1.6	Aplicabilidad
 
 El patrón Estrategia se usa cuando:
 Varias clases difieren en el comportamiento de una o dos responsabilidades.
