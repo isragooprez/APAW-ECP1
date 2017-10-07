@@ -45,4 +45,14 @@ Varias clases difieren en el comportamiento de una o dos responsabilidades.
 Es necesario implementar diversas variantes de un mismo algoritmo y seleccionar una variante concreta en tiempo de ejecución.
 Una clase define muchos comportamientos y eso se traduce en un montón de condicionales en sus métodos.
 Definir una familia de algoritmos, encapsular cada uno y hacerlos intercambiables. Este patrón permite cambiar de algoritmo independientemente del cliente.
+
+
+###### 1.7 Ejemplo Video Juego Soldado
+
+Un videojuego con  soldado que puede portar y utilizar varias armas distintas. La clase (o clases) que representan a nuestro soldado no deberían de preocuparse de los detalles de las armas que porta: debería bastar, por ejemplo, con un método de interfaz “atacar” que dispare el arma actual y otro método “recargar” que inserte munición. Da igual que nuestro soldado porte un rifle, una pistola o un fusil: los detalles de cada estrategia estarán encapsulados dentro de cada una de las clases intercambiables que representan las armas. Nuestra clase cliente (el soldado) únicamente debe preocuparse de las acciones comunes a todas ellas: atacar.
+Nuestro diagrama de clases muestra una interfaz denominada IStrategy que expone un método operaciones. Las clases que implementen esta interfaz serán aquellas que implementen las distintas estrategias a realizar por el cliente, y cómo podemos observar, no tienen mayor dificultad: una interfaz, varias clases que la implementan. 
+La filosofía del patrón, por lo tanto, radica en el enlace entre la llamada clase de contexto y la propia interfaz. Esta clase de contexto será el “broker” o intermediario entre el cliente y las clases que implementan la estrategia, y por lo tanto, sus funciones serán simples: cambiar la estrategia actual y ejecutarla. 
+
+* VER MAS 
+https://github.com/isragooprez/APAW-ECP1/wiki
  
