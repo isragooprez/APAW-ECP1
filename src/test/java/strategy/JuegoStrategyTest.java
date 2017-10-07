@@ -25,9 +25,15 @@ public class JuegoStrategyTest {
 		this.soldado.Informacion(1, 50);
 	}
 	@Test
-	public void playerAmateur() {
+	public void playerAmateurEstadoNovalido() {
 		this.soldado.playerAmateur();
 		this.soldado.Informacion(5, 20);
+		
+	}
+	@Test
+	public void playerAmateurEstadoValido() {
+		this.soldado.playerAmateur();
+		this.soldado.Informacion(1, 20);
 		
 	}
 
