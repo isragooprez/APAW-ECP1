@@ -19,7 +19,6 @@ public class StrategyPistola implements IStrategy {
 			try {
 				throw new PistolaInvalidaOptionExeption();
 			} catch (PistolaInvalidaOptionExeption e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 		}
